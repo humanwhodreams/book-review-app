@@ -2,10 +2,7 @@ import type { Metadata } from 'next';
 
 export function overrideMetadata(override: Metadata): Metadata {
   return {
-    title: {
-      template: '%s - BRA',
-      default: 'Book Reviewing Application',
-    },
+    title: override.title ?? 'Book Reviewing Application.',
     description:
       override.description ??
       'An application that allows you to review books you have read.',

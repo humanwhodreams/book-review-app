@@ -8,7 +8,10 @@ import { cn } from '@/lib/cn';
 import { overrideMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = overrideMetadata({
-  title: 'Book Reviewing Application'
+  title: {
+    template: '%s - BRA',
+    default: 'Book Reviewing Application'
+  }
 });
 
 export default function RootLayout({
